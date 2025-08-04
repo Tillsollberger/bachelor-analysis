@@ -3,7 +3,7 @@
 #defining order for all questions
 
 # Answer order for: Use AI school and education
-Use_AI_school_and_education_order = [
+Use_AI_school_and_freetime_order = [
     "Nie",
     "Seltener",
     "Etwa 1 Mal pro Woche",
@@ -43,7 +43,7 @@ deal_order = [
     "Sehr gut",
     "Eher gut",
     "Weder gut noch schlecht",
-    "Eher wenig",
+    "Eher schlecht",
     "Gar nicht"
 ]
 
@@ -135,14 +135,14 @@ allowance_order = [
 concerns_order = [
     "Ja",
     "Nein",
-    "Ich habe darüber noch nie nachgedacht"
+    "Ich habe darüber noch nie nachgedacht."
 ]
 
 # Answer order for: Teachers preparing lessons
 teachers_preparing_lessons_order = [
     "Stört mich sehr",
     "Stört mich ein wenig",
-    "Neutral / mir egal",
+    "Neutral / Mir egal",
     "Finde ich gut",
     "Finde ich sehr gut"
 ]
@@ -151,7 +151,7 @@ teachers_preparing_lessons_order = [
 teachers_giving_grades_order = [
     "Stört mich sehr",
     "Stört mich ein wenig",
-    "Neutral / mir egal",
+    "Neutral / Mir egal",
     "Finde ich gut",
     "Finde ich sehr gut"
 ]
@@ -162,7 +162,7 @@ Mates_using_AI_order = [
     "Selten",
     "Manchmal",
     "Oft",
-    "Sehr oft"
+    "Immer"
 ]
 
 # Answer order for: Frequency of use AI_school
@@ -170,16 +170,16 @@ Frequency_of_use_AI_school_order = [
     "Nie",
     "Selten",
     "Manchmal",
-    "Oft",
-    "Sehr oft"
+    "Häufig",
+    "Immer"
 ]
 
 # Answer order for: Help of AI
 helpfulness_order = [
     "Sehr gut",
-    "Gut",
-    "Mittel",
-    "Schlecht",
+    "Eher gut",
+    "Neutral",
+    "Eher schlecht",
     "Sehr schlecht"
 ]
 
@@ -187,6 +187,16 @@ hours_per_week_order = [
     "0-1 Stunde pro Woche", 
     "2-5 Stunden pro Woche",
     "Mehr als 5 Stunden pro Woche"
+]
+
+true_false_score = [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6"
 ]
 
 # matching order to column names
@@ -205,7 +215,7 @@ question_orders = {
     "Allowance to use AI": allowance_order,
     "Concerns AI": concerns_order,
     "Help of AI": helpfulness_order,
-    "Use AI school and education": Use_AI_school_and_education_order,
+    "Use AI school and freetime": Use_AI_school_and_freetime_order,
     "Frequency of use education": Frequency_of_use_education_order,
     "Frequency of use everyday life": Frequency_of_use_everyday_life_order,
     "Teachers preparing lessons": teachers_preparing_lessons_order,
