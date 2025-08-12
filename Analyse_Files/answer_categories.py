@@ -4,11 +4,11 @@
 
 # Answer order for: Use AI school and education
 Use_AI_school_and_freetime_order = [
-    "Nie",
-    "Seltener",
-    "Etwa 1 Mal pro Woche",
+    "Täglich",
     "Mehrmals pro Woche",
-    "Täglich"
+    "Etwa 1 Mal pro Woche",
+    "Seltener",
+    "Nie"
 ]
 
 # Answer order for: Frequency of use education
@@ -56,8 +56,8 @@ understanding_order = [
     "Gar nicht"
 ]
 
-# Answer order for: Internet terms Spyware
-Internet_terms_Spyware_order = [
+# Answer order for: Internet terms 
+Internet_terms_order = [
     "Kein Verständnis",
     "Schlechtes Verständnis",
     "Mittelmässiges Verständnis",
@@ -65,49 +65,13 @@ Internet_terms_Spyware_order = [
     "Völliges Verständnis"
 ]
 
-# Answer order for: Internet terms Cache
-Internet_terms_Cache_order = [
-    "Kein Verständnis",
+# Answer order for: Internet terms Score
+Internet_terms_order_2 = [
+    "Sehr schlechtes Verständnis",
     "Schlechtes Verständnis",
     "Mittelmässiges Verständnis",
     "Gutes Verständnis",
-    "Völliges Verständnis"
-]
-
-# Answer order for: Internet terms Andvanced Search
-Internet_terms_Advanced_Search_order = [
-    "Kein Verständnis",
-    "Schlechtes Verständnis",
-    "Mittelmässiges Verständnis",
-    "Gutes Verständnis",
-    "Völliges Verständnis"
-]
-
-# Answer order for: Internet terms PDF
-Internet_terms_PDF_order = [
-    "Kein Verständnis",
-    "Schlechtes Verständnis",
-    "Mittelmässiges Verständnis",
-    "Gutes Verständnis",
-    "Völliges Verständnis"
-]
-
-# Answer order for: Internet terms Phishing
-Internet_terms_Phishing_order = [
-    "Kein Verständnis",
-    "Schlechtes Verständnis",
-    "Mittelmässiges Verständnis",
-    "Gutes Verständnis",
-    "Völliges Verständnis"
-]
-
-# Answer order for: Internet terms Wiki
-Internet_terms_Wiki_order = [
-    "Kein Verständnis",
-    "Schlechtes Verständnis",
-    "Mittelmässiges Verständnis",
-    "Gutes Verständnis",
-    "Völliges Verständnis"
+    "Sehr gutes Verständnis"
 ]
 
 # Answer order for: Reliability AI
@@ -199,18 +163,35 @@ true_false_score = [
     "6"
 ]
 
-# matching order to column names
+CRT_order = [
+    "0",
+    "1",
+    "2",
+    "3"
+]
 
+Age_order = [
+    "11",
+    "12",
+    "13",
+    "14",
+    "15",
+    "16",
+    "17",
+    "18"
+]
+
+# matching order to column names
 question_orders = {
     "Usefullness AI": usefulness_order,
     "Deal with AI": deal_order,
     "Understanding AI": understanding_order,
-    "Internet terms_Spyware": Internet_terms_Spyware_order,
-    "Internet terms_Cache": Internet_terms_Cache_order,
-    "Internet terms_Advanced Search": Internet_terms_Advanced_Search_order,
-    "Internet terms_PDF": Internet_terms_PDF_order,
-    "Internet terms_Phishing": Internet_terms_Phishing_order,
-    "Internet terms_Wiki": Internet_terms_Wiki_order,
+    "Internet terms_Spyware": Internet_terms_order,
+    "Internet terms_Cache": Internet_terms_order,
+    "Internet terms_Advanced Search": Internet_terms_order,
+    "Internet terms_PDF": Internet_terms_order,
+    "Internet terms_Phishing": Internet_terms_order,
+    "Internet terms_Wiki": Internet_terms_order,
     "Reliability AI": reliability_order,
     "Allowance to use AI": allowance_order,
     "Concerns AI": concerns_order,
@@ -222,5 +203,9 @@ question_orders = {
     "Teachers giving grades": teachers_giving_grades_order,
     "Mates using AI": Mates_using_AI_order,
     "Frequency use of AI_school": Frequency_of_use_AI_school_order,
-    "Hours per week for school": hours_per_week_order
+    "Hours per week for school": hours_per_week_order,
+    "Age": Age_order,
+    "CRT_points": CRT_order,
+    "Internet_Understanding_Score": Internet_terms_order_2,
+    "Internet Understanding (Grouped)": Internet_terms_order_2
 }

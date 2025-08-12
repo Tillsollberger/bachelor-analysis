@@ -96,8 +96,14 @@ comparison_pairs_by_demo = {
     ],
     "Hours per week for school": [
         "Frequency of use education",
-        "Understanding AI"
     ],
+    "Preferred Subjects": [
+        "Most used subjects"
+    ],
+    "Least preferred Subjects": [
+        "Most used subjects"
+    ]
+
 }
 
 # Dictionary: for every AI question a list of AI questions to analyze
@@ -152,8 +158,9 @@ likert_questions = [
     "Teachers preparing lessons",
     "Teachers giving grades",
     "Mates using AI",
-    "Frequency use of AI_school",
-    "Help of AI"
+    "Help of AI",
+    "Internet Understanding (Grouped)",
+    "True_False_Score"
 ]
 
 # matching numbers to the likert scale questions
@@ -225,6 +232,32 @@ likert_mapping = {
     "Seltener": 2,
     "Nie": 1,
 
-    "Schlecht": 2
+    "Schlecht": 2,
 
+    "Sehr gutes Verständnis": 5,
+    "Sehr schlechtes VErständnis": 1
+
+}
+
+# Custom chart titles for specific question pairs
+cross_tab_titles_and_colors = {
+    # Gender
+    ("Gender", "Use AI school and freetime"): ["AI usage (school + free time) by gender",],
+    ("Gender", "Usefullness AI"): ["Perceived usefulness of AI by gender"],
+    ("Gender", "Most used subjects"): ["Most used school subjects for AI by gender"],
+    ("Gender", "Help of AI"): ["Perceived helpfulness of AI by gender"],
+
+    # Age
+    ("Age", "Use AI school and freetime"): ["AI usage (school + free time) by age"],
+    ("Age", "Deal with AI"): ["Confidence dealing with AI by age"],
+    ("Age", "Understanding AI"): ["Self‑rated understanding of AI by age"],
+    ("Age", "Concerns AI"): ["Concerns about AI by age"],
+    ("Age", "Help of AI"): ["Perceived helpfulness of AI by age"],
+
+    # Preferred / Least preferred subjects → Most used subjects
+    ("Preferred Subjects", "Most used subjects"): ["Most used school subjects for AI by preferred subjects"],
+    ("Least preferred Subjects", "Most used subjects"): ["Most used school subjects for AI by least preferred subjects"],
+
+    # Hours per week for school
+    ("Hours per week for school", "Frequency of use education"): ["AI usage frequency in education by hours per week spent for school in free time"],
 }

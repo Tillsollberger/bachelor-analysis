@@ -130,11 +130,11 @@ def calculate_Internet_terms_understanding_score(df):
 def group_internet_understanding(df):
     bins = [0, 10, 15, 20, 25, 30]
     labels = [
-        "Sehr schlechtes Verständnis",
+        "Kein Verständnis",
         "Schlechtes Verständnis",
         "Mittelmässiges Verständnis",
         "Gutes Verständnis",
-        "Sehr gutes Verständnis"
+        "Völliges Verständnis"
     ]
     df["Internet Understanding (Grouped)"] = pd.cut(
         df["Internet_Understanding_Score"],
@@ -209,4 +209,3 @@ def analyze_subject_distribution_changed(df, column, title=None, return_df=False
         return result
     else:
         print(result)
-
