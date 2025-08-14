@@ -117,7 +117,7 @@ def calculate_true_false_score(df):
     
     return df
 
-# funtion to calculate the amount of correct answered True/false questions
+# funtion to calculate the score of internet understanding
 def calculate_Internet_terms_understanding_score(df):
     internet_cols = [col for col in df.columns if col.startswith("Internet terms_")]
 

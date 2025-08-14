@@ -94,7 +94,6 @@ allowance_order = [
     "Nein, weder für die Schule noch für die Hausaufgaben"
 ]
 
-
 # Answer order for: Concerns AI
 concerns_order = [
     "Ja",

@@ -76,6 +76,15 @@ true_false_solutions = {
     "True/False_6": "Falsch"
 }
 
+#new mapping for Internet terms score
+Internet_terms_mapping = {
+   "Völliges Verständnis": 5,
+    "Gutes Verständnis": 4,
+    "Mittelmässiges Verständnis": 3,
+    "Schlechtes Verständnis": 2,
+    "Kein Verständnis": 1 
+}
+
 # Dictionary: for every demographic question a list of AI questions to analyze
 comparison_pairs_by_demo = {
     "Gender": [
@@ -136,14 +145,6 @@ comparison_pairs_by_AI_questions = {
         "Help of AI"
     ]
 
-}
-
-Internet_terms_mapping = {
-   "Völliges Verständnis": 5,
-    "Gutes Verständnis": 4,
-    "Mittelmässiges Verständnis": 3,
-    "Schlechtes Verständnis": 2,
-    "Kein Verständnis": 1 
 }
 
 # all likert scale questions
@@ -242,7 +243,7 @@ likert_mapping = {
 # Custom chart titles for specific question pairs
 cross_tab_titles_and_colors = {
     # Gender
-    ("Gender", "Use AI school and freetime"): ["AI usage (school + free time) by gender",],
+    ("Gender", "Use AI school and freetime"): ["AI usage (school + free time) by gender",  "#95a5a6" ,"#4a90e2", "#e74c3c"],
     ("Gender", "Usefullness AI"): ["Perceived usefulness of AI by gender"],
     ("Gender", "Most used subjects"): ["Most used school subjects for AI by gender"],
     ("Gender", "Help of AI"): ["Perceived helpfulness of AI by gender"],
