@@ -123,7 +123,9 @@ comparison_pairs_by_AI_questions = {
         "Most used subjects",
         "Reliability AI",
         "Mates using AI",
-        "Help of AI"
+        "Help of AI",
+        "Deal with AI",
+        "Understanding AI"
     ],
     "Used AI": [
         "Reliability AI",
@@ -141,7 +143,7 @@ comparison_pairs_by_AI_questions = {
         "Teachers preparing lessons",
         "Teachers giving grades"
     ],
-    "Frequency of use AI_school": [
+    "Frequency use of AI_school": [
         "Help of AI"
     ]
 
@@ -156,10 +158,10 @@ likert_questions = [
     "Deal with AI",
     "Understanding AI",
     "Reliability AI",
+    "Help of AI",
+    "Mates using AI",
     "Teachers preparing lessons",
     "Teachers giving grades",
-    "Mates using AI",
-    "Help of AI",
     "Internet Understanding (Grouped)",
     "True_False_Score"
 ]
@@ -243,7 +245,7 @@ likert_mapping = {
 # Custom chart titles for specific question pairs
 cross_tab_titles_and_colors = {
     # Gender
-    ("Gender", "Use AI school and freetime"): ["AI usage (school + free time) by gender",  "#95a5a6" ,"#4a90e2", "#e74c3c"],
+    ("Gender", "Use AI school and freetime"): ["AI usage (school + free time) by gender",  "#74af8f" ,"#4a90e2", "#e74c3c"],
     ("Gender", "Usefullness AI"): ["Perceived usefulness of AI by gender"],
     ("Gender", "Most used subjects"): ["Most used school subjects for AI by gender"],
     ("Gender", "Help of AI"): ["Perceived helpfulness of AI by gender"],
