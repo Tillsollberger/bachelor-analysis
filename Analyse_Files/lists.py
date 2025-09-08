@@ -90,8 +90,7 @@ comparison_pairs_by_demo = {
     "Gender": [
         "Use AI school and freetime",
         "Usefullness AI",
-        "Most used subjects",
-        "Help of AI"
+        "Most used subjects"
         
     ],
     "Age": [
@@ -99,18 +98,10 @@ comparison_pairs_by_demo = {
         "Deal with AI",
         "Understanding AI",
         "Concerns AI",
-        "Help of AI",
-        "True_False_Score",
         "Internet Understanding (Grouped)"
     ],
     "Hours per week for school": [
         "Frequency of use education",
-    ],
-    "Preferred Subjects": [
-        "Most used subjects"
-    ],
-    "Least preferred Subjects": [
-        "Most used subjects"
     ]
 
 }
@@ -120,31 +111,22 @@ comparison_pairs_by_AI_questions = {
     "Use AI school and freetime": [
         "Usefullness AI",
         "Concerns AI",
-        "Most used subjects",
         "Reliability AI",
         "Mates using AI",
-        "Help of AI",
         "Deal with AI",
         "Understanding AI"
     ],
     "Used AI": [
-        "Reliability AI",
-        "Concerns AI"
-    ],
-    "Understanding AI": [
-        "Deal with AI",
-        "True_False_Score",
-        "Internet Understanding (Grouped)"
-    ],
-    "Internet Understanding (Grouped)": [
-        "True_False_Score"
+        "Reliability AI"
     ],
     "Reliability AI": [
         "Teachers preparing lessons",
         "Teachers giving grades"
     ],
     "Frequency use of AI_school": [
-        "Help of AI"
+        "Help of AI",
+        "Reasons to use AI (Count)",
+        "Purposes to use AI (Count)"
     ]
 
 }
@@ -264,3 +246,17 @@ cross_tab_titles_and_colors = {
     # Hours per week for school
     ("Hours per week for school", "Frequency of use education"): ["AI usage frequency in education by hours per week spent for school in free time"],
 }
+
+#lists for significance tests
+nominal_posthoc_pairs_demo = [
+    ("Usefullness AI", "Gender"),
+    ("Help of AI", "Gender"),
+    ("Concerns AI", "Age")
+]
+
+
+ordinal_posthoc_pairs_demo = [
+    ("Use AI school and freetime", "Age"),
+    ("True_False_Score", "Age"),
+    ("Internet Understanding (Grouped)", "Age")
+]

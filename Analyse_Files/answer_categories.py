@@ -177,7 +177,8 @@ Age_order = [
     "15",
     "16",
     "17",
-    "18"
+    "18",
+    "19"
 ]
 
 # matching order to column names
@@ -208,3 +209,179 @@ question_orders = {
     "Internet_Understanding_Score": Internet_terms_order_2,
     "Internet Understanding (Grouped)": Internet_terms_order_2
 }
+
+
+LABEL_MAPS = {
+    # =====================
+    # Frequencies of use
+    # =====================
+    "Use AI school and freetime": {
+        "Täglich": "Daily",
+        "Mehrmals pro Woche": "Several times a week",
+        "Etwa 1 Mal pro Woche": "About once a week",
+        "Seltener": "Less often",
+        "Nie": "Never",
+    },
+    "Frequency of use education": {
+        "Nie": "Never",
+        "Selten": "Rarely",
+        "Manchmal": "Sometimes",
+        "Oft": "Often",
+        "Sehr oft": "Very often",
+    },
+    "Frequency of use everyday life": {
+        "Nie": "Never",
+        "Selten": "Rarely",
+        "Manchmal": "Sometimes",
+        "Oft": "Often",
+        "Sehr oft": "Very often",
+    },
+    "Frequency of use AI_school": {
+        "Nie": "Never",
+        "Selten": "Rarely",
+        "Manchmal": "Sometimes",
+        "Häufig": "Often",
+        "Immer": "Always",
+    },
+
+    # =====================
+    # Perceived usefulness / skills
+    # =====================
+    "Usefulness AI": {
+        "Sehr nützlich": "Very useful",
+        "Ziemlich nützlich": "Quite useful",
+        "Teils/teils": "Neutral",
+        "Wenig nützlich": "Not very useful",
+        "Überhaupt nicht nützlich": "Not useful at all",
+    },
+    "Deal with AI": {
+        "Sehr gut": "Very good",
+        "Eher gut": "Rather good",
+        "Weder gut noch schlecht": "Neither good nor bad",
+        "Eher schlecht": "Rather bad",
+        "Gar nicht": "Not at all",
+    },
+    "Understanding AI": {
+        "Sehr gut": "Very good",
+        "Eher gut": "Rather good",
+        "Weder gut noch schlecht": "Neither good nor bad",
+        "Eher wenig": "Rather little",
+        "Gar nicht": "Not at all",
+    },
+    "Help of AI": {
+        "Sehr gut": "Very good",
+        "Eher gut": "Rather good",
+        "Neutral": "Neutral",
+        "Eher schlecht": "Rather bad",
+        "Sehr schlecht": "Very bad",
+    },
+
+    # =====================
+    # Internet terms
+    # =====================
+    "Internet terms": {
+        "Kein Verständnis": "No understanding",
+        "Schlechtes Verständnis": "Poor understanding",
+        "Mittelmässiges Verständnis": "Moderate understanding",
+        "Gutes Verständnis": "Good understanding",
+        "Völliges Verständnis": "Complete understanding",
+    },
+    "Internet terms (Score)": {
+        "Sehr schlechtes Verständnis": "Very poor understanding",
+        "Schlechtes Verständnis": "Poor understanding",
+        "Mittelmässiges Verständnis": "Moderate understanding",
+        "Gutes Verständnis": "Good understanding",
+        "Sehr gutes Verständnis": "Very good understanding",
+    },
+
+    # =====================
+    # Reliability
+    # =====================
+    "Reliability AI": {
+        "Sehr verlässlich": "Very reliable",
+        "Eher verlässlich": "Rather reliable",
+        "Teils/teils": "Neutral",
+        "Wenig verlässlich": "Not very reliable",
+        "Gar nicht verlässlich": "Not reliable at all",
+        "Unsicher / Ich habe keine Meinung": "Unsure / No opinion",
+    },
+
+    # =====================
+    # Allowance to use AI
+    # =====================
+    "Allowance to use AI": {
+        "Ja, für beides": "Yes, for both",
+        "Nur für Hausaufgaben": "Only for homework",
+        "Nur in der Schule": "Only at school",
+        "Nur wenn die Lehrperson es ausdrücklich erlaubt": "Only if the teacher explicitly allows it",
+        "Nur wenn meine Eltern es erlauben": "Only if my parents allow it",
+        "Nein, weder für die Schule noch für die Hausaufgaben": "No, neither for school nor homework",
+    },
+
+    # =====================
+    # Concerns AI
+    # =====================
+    "Concerns AI": {
+        "Ja": "Yes",
+        "Nein": "No",
+        "Ich habe darüber noch nie nachgedacht.": "I have never thought about it",
+    },
+
+    # =====================
+    # Teachers
+    # =====================
+    "Teachers preparing lessons": {
+        "Stört mich sehr": "Bothers me a lot",
+        "Stört mich ein wenig": "Bothers me a little",
+        "Neutral / Mir egal": "Neutral / I don't care",
+        "Finde ich gut": "I think it's good",
+        "Finde ich sehr gut": "I think it's very good",
+    },
+    "Teachers giving grades": {
+        "Stört mich sehr": "Bothers me a lot",
+        "Stört mich ein wenig": "Bothers me a little",
+        "Neutral / Mir egal": "Neutral / I don't care",
+        "Finde ich gut": "I think it's good",
+        "Finde ich sehr gut": "I think it's very good",
+    },
+
+    # =====================
+    # Mates
+    # =====================
+    "Mates using AI": {
+        "Nie": "Never",
+        "Selten": "Rarely",
+        "Manchmal": "Sometimes",
+        "Oft": "Often",
+        "Immer": "Always",
+    },
+
+    # =====================
+    # Hours per week
+    # =====================
+    "Hours per week for school": {
+        "0-1 Stunde pro Woche": "0–1 hour per week",
+        "2-5 Stunden pro Woche": "2–5 hours per week",
+        "Mehr als 5 Stunden pro Woche": "More than 5 hours per week",
+    },
+
+    # =====================
+    # Scores
+    # =====================
+    "True_False_Score": {
+        "0": "0",
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5",
+        "6": "6",
+    },
+    "CRT_points": {
+        "0": "0",
+        "1": "1",
+        "2": "2",
+        "3": "3",
+    },
+}
+
