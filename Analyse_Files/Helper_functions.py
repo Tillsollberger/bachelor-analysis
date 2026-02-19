@@ -76,7 +76,7 @@ def analyze_subject_distribution(
 
 def calculate_true_false_score(df: pd.DataFrame) -> pd.DataFrame:
     """
-    Adds True_False_Score as number of correct answers across true_false_solutions keys.
+    Adds True_False_Score as number of correct answers across true_false_solutions keys
     """
     cols = list(true_false_solutions.keys())
     df["True_False_Score"] = df[cols].apply(
@@ -87,12 +87,14 @@ def calculate_true_false_score(df: pd.DataFrame) -> pd.DataFrame:
 
 
 def calculate_internet_terms_understanding_score(df: pd.DataFrame) -> pd.DataFrame:
-    # Adds Internet_Understanding_Score by mapping Internet terms_* columns to 1..5 and summing.
-    
     internet_cols = [c for c in df.columns if c.startswith("Internet terms_")]
+    
     df_mapped = df[internet_cols].replace(Internet_terms_mapping)
-    df["Internet_Understanding_Score"] = df_mapped.sum(axis=1, min_count=1)
+    
+    df["Internet_Understanding_Score"] = df_mapped.mean(axis=1)
+    
     return df
+
 
 
 def group_internet_understanding(df: pd.DataFrame) -> pd.DataFrame:
