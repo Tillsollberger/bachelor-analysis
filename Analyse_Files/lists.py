@@ -134,7 +134,7 @@ likert_questions = [
     "Mates using AI",
     "Teachers preparing lessons",
     "Teachers giving grades",
-    "Internet Understanding (Grouped)",
+    "Internet_Understanding_Score",
     "True_False_Score",
 ]
 

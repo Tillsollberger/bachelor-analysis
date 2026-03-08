@@ -97,26 +97,6 @@ def calculate_internet_terms_understanding_score(df: pd.DataFrame) -> pd.DataFra
 
 
 
-def group_internet_understanding(df: pd.DataFrame) -> pd.DataFrame:
-    # Groups Internet_Understanding_Score into 5 categories.
-    
-    bins = [0, 10, 15, 20, 25, 30]
-    labels = [
-        "Kein Verständnis",
-        "Schlechtes Verständnis",
-        "Mittelmässiges Verständnis",
-        "Gutes Verständnis",
-        "Völliges Verständnis",
-    ]
-    df["Internet Understanding (Grouped)"] = pd.cut(
-        df["Internet_Understanding_Score"],
-        bins=bins,
-        labels=labels,
-        include_lowest=True,
-    )
-    return df
-
-
 def clean_up_subjects(df: pd.DataFrame, columnname: str, max_subjects: int = 3) -> pd.DataFrame:
     
     def _pick(subjects: list[str], seed_text: str) -> list[str]:
